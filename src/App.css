@@ -1,0 +1,101 @@
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: azure;
+  color: black;
+}  
+
+/* Establece un estilo para el contenedor principal de la aplicación */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* hace que el contenido principal ocupe el resto de la pantalla */
+.main-content {
+  flex-grow: 1;
+}
+
+
+.p-menubar.p-component {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.red-icon {
+  width: 2.5rem; height: 2.5rem;
+}
+
+
+/*footer*/
+footer{
+  width: 100%;
+  margin: 0px;
+}
+
+.footerContainer{
+
+  color: white;
+  width: 100%;
+  margin: 0px;
+  background-color: #004173;
+}
+
+@media (max-width: 559px) {
+  .footerContainer {
+    height: 180px !important; 
+    margin: 0px;
+  } }
+
+@media (min-width: 560px) and (max-width: 769px) {
+  .footerContainer {
+    height: 120px !important; 
+    margin: 0px;
+  } }
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .footerContainer {
+    height: 100px !important; 
+    margin: 0px;
+  } }
+
+.footer__copyright{
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.footer__nombre{
+  font-size: 1rem;
+  text-align: center;
+}
+
+.redes_sociales{
+  text-align: center;
+  height:3rem;
+}
+
+.redes_logos{
+  margin-left: 20px;
+  width: 1.4rem;
+  color:white;
+  padding-top: 3px;
+}
+
+.redes_logos:hover{
+  color: #7cdaf9;
+}
+
+/*end footer*/
