@@ -1,29 +1,33 @@
-import { Menubar } from 'primereact/menubar';
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+
 export const Header = () => {
-  const items = [
-    { label: 'Home', icon: 'pi pi-fw pi-home', to: '/' },
-    { label: 'Especificaciones', icon: 'pi pi-fw pi-star', to: '/especificaciones' },
-    { label: 'Galería', icon: 'pi pi-fw pi-images', to: '/galeria' },
-    { label: 'Próximamente', icon: 'pi pi-fw pi-eye', to: '/proximamente' },
-    { label: 'Contacto', icon: 'pi pi-fw pi-envelope', to: '/contacto' },
-  ];
+  const [menuOpen, setMenuOpen] = useState(false);
 
-const start = <img alt="logo" src="https://primefaces.org/cdn/primereact/images/logo.png" height="40" className="mr-2"></img>;
+  const handleToggleClick = () => {
+    setMenuOpen(!menuOpen);
+  };
 
-return (
-    <div className="card">
-        <Menubar
-        model={items.map((item) => ({
-          template: (
-            <NavLink to={item.to} className="p-menuitem-link">
-              <i className={`pi ${item.icon}`} />
-              <span>{item.label}</span>
-            </NavLink>
-          ),
-        }))}
-        start={start}
-      />
+  const handleNavLinkClick = () => {
+    setMenuOpen(false);
+  };
+
+  return (
+    <div className="wrapper">
+      <nav>
+        <a href="#" className="logo">LOGO</a>
+        <input type="checkbox" name="" id="toggle" checked={menuOpen} />
+        <label htmlFor="toggle" onClick={handleToggleClick}><i className="material-icons">menu</i></label>
+        <div className={`menu ${menuOpen ? 'open' : ''}`}>
+          <ul>
+            <li><NavLink to="/" onClick={handleNavLinkClick}>Home</NavLink></li>
+            <li><NavLink to="/especificaciones" onClick={handleNavLinkClick}>Especificaciones</NavLink></li>
+            <li><NavLink to="/galeria" onClick={handleNavLinkClick}>Galeria</NavLink></li>
+            <li><NavLink to="/proximamente" onClick={handleNavLinkClick}>Proximamente</NavLink></li>
+            <li><NavLink to="/contacto" onClick={handleNavLinkClick}>Contacto</NavLink></li>
+          </ul>
+        </div>
+      </nav>
     </div>
-)
+  );
 }

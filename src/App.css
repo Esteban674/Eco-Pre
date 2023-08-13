@@ -2,6 +2,13 @@
   margin: 0;
   padding: 0;
   height: 100%;
+  --color-primario: #26326C; /* Azul Oscuro*/
+  --color-secundario: #406391; /* Azul Claro */
+  --color-terciario: #C6A37A; /* Arcilla */
+  --color-cuaternario: #BBB3A8; /* Gris Tierra */
+  --color-quintenario: #425220; /* Verde Oliva */
+  --color-fuente-dark: white; /* Blanco */
+  --color-fuente-light: black; /*Negro */
 }
 
 body {
@@ -26,51 +33,52 @@ body {
   flex-grow: 1;
 }
 
+/*Menu Bar*/
 
-.p-menubar.p-component {
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #f0f0f0;
-  padding: 10px;
+  background-color: var(--color-primario);
+  padding: 1rem 1.5rem;
+}
+nav .logo {
+  font-weight: 700;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+nav a {
+  text-decoration: none;
+  color: var(--color-fuente-dark);
+}
+nav #toggle,
+nav label {
+  display: none;
 }
 
-.red-icon {
-  width: 2.5rem; height: 2.5rem;
-}
+/*End Menu Bar*/
 
 
 /*footer*/
 footer{
   width: 100%;
   margin: 0px;
+  background-color: var(--color-primario);
 }
 
 .footerContainer{
-
-  color: white;
+  color: var(--color-fuente-dark);
   width: 100%;
   margin: 0px;
-  background-color: #004173;
 }
-
-@media (max-width: 559px) {
-  .footerContainer {
-    height: 180px !important; 
-    margin: 0px;
-  } }
-
-@media (min-width: 560px) and (max-width: 769px) {
-  .footerContainer {
-    height: 120px !important; 
-    margin: 0px;
-  } }
-
-@media (min-width: 769px) and (max-width: 992px) {
-  .footerContainer {
-    height: 100px !important; 
-    margin: 0px;
-  } }
 
 .footer__copyright{
   font-size: 0.8rem;
@@ -90,7 +98,7 @@ footer{
 .redes_logos{
   margin-left: 20px;
   width: 1.4rem;
-  color:white;
+  color: var(--color-fuente-dark);
   padding-top: 3px;
 }
 
@@ -98,4 +106,69 @@ footer{
   color: #7cdaf9;
 }
 
+.red-icon {
+  width: 2.5rem; height: 2.5rem;
+}
+
 /*end footer*/
+
+/*Media Queries*/
+/*Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .footerContainer {
+    height: 180px !important; 
+    margin: 0px;
+  }
+  nav .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  nav label {
+    display: inline-flex;
+    color: white;
+    cursor: pointer;
+  }
+  nav #toggle:checked ~ .menu {
+    height: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .footerContainer {
+    height: 150px !important; 
+    margin: 0px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .footerContainer {
+    height: 120px !important; 
+    margin: 0px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .footerContainer {
+    height: 100px !important; 
+    margin: 0px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .footerContainer {
+    height: 80px !important; 
+    margin: 0px;
+  }
+}
+
+
