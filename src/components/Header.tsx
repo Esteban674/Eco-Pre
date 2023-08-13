@@ -9,17 +9,24 @@ export const Header = () => {
   };
 
   const handleNavLinkClick = () => {
-    setMenuOpen(false);
+    setMenuOpen(!menuOpen); // Cierra el menú al hacer clic en cualquier enlace del menú
   };
 
   return (
     <div className="wrapper">
       <nav>
-        <a href="#" className="logo">LOGO</a>
-        <input type="checkbox" name="" id="toggle" checked={menuOpen} />
-        <label htmlFor="toggle" onClick={handleToggleClick}><i className="material-icons">menu</i></label>
-        <div className={`menu ${menuOpen ? 'open' : ''}`}>
+        <div className="header-brand">
+          <NavLink to="/" className="logo">
+            <img src="/src/assets/LogoEcoPre.png" alt="Logo_EcoPre" className='logoEcoPre'/>
+          </NavLink>
+          <span className='brand'>ECO-PRE</span>
+        </div>
+        <label htmlFor="toggle" className="icon-menu" onClick={handleToggleClick}>
+          <i className="material-icons">menu</i>
+        </label>
+        <div className={`${menuOpen ? 'open' : 'closed'}`}>
           <ul>
+            {/* Agrega handleNavLinkClick a los enlaces del menú */}
             <li><NavLink to="/" onClick={handleNavLinkClick}>Home</NavLink></li>
             <li><NavLink to="/especificaciones" onClick={handleNavLinkClick}>Especificaciones</NavLink></li>
             <li><NavLink to="/galeria" onClick={handleNavLinkClick}>Galeria</NavLink></li>
