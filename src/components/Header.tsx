@@ -17,7 +17,7 @@ export const Header = () => {
       <nav>
         <div className="header-brand">
           <NavLink to="/" className="logo">
-            <img src="/assets/LogoEcoPre.png" alt="Logo_EcoPre" className='logoEcoPre'/>
+            <img src="/src/assets/LogoEcoPre.png" alt="Logo_EcoPre" className='logoEcoPre'/>
           </NavLink>
           <span className='brand'>ECO-PRE</span>
         </div>
