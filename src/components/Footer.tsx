@@ -4,7 +4,16 @@ export const Footer = () => {
     <footer>
       <div className="flex align-items-stretch align-items-center justify-content-around flex-wrap footerContainer">
         <div className="flex align-items-center justify-content-center px-5 m-0">
-          <p className="footer__copyright">Copyright © 2022, All Right Reserved</p>
+        <img src="/src/assets/Negativo1EcoPre.png" alt="Logo_EcoPreNeg" className='logoEcoPreFooter'/>
+        </div>
+        <div className="flex align-items-center justify-content-center px-5 m-0">
+          <p className="footer__nombre">Desarrollado por: <b>Esteban Perea</b></p>
+        </div>
+      </div>
+
+      <div className="flex align-items-stretch align-items-center justify-content-around flex-wrap footerContainer">
+        <div className="flex align-items-center justify-content-center px-5 m-0">
+          <p className="footer__copyright">Copyright © 2023, All Right Reserved</p>
         </div>
         <div className="flex align-items-center justify-content-center px-5 m-0">
           <p className="footer__nombre">Desarrollado por: <b>Esteban Perea</b></p>
