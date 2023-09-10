@@ -5,7 +5,7 @@ export const Footer = () => {
     <footer>
       <div className="top-footer flex align-items-stretch align-items-center justify-content-around flex-wrap footerContainer">
         <div className="flex align-items-center justify-content-center px-5 m-0">
-          <img src="./assets/Negativo1EcoPre.png" alt="Logo_EcoPreNeg" className='logoEcoPreFooter'/>
+          <img src="./assets/Negativo1EcoPre.png" alt="Logo_EcoPreNeg" className='logoEcoPreFooter pt-2'/>
         </div>
         <div className="flex align-items-center justify-content-center px-5">
           <ul>

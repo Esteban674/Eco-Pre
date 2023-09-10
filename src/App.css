@@ -149,7 +149,7 @@ footer ul li a {
   font-family: var(--font-subtitle);
   font-weight: 400;
   font-size: 1rem;
-  transition: color 0.7s;
+  transition: color 0.3s;
 }
 
 footer ul li:hover a{
@@ -283,7 +283,7 @@ footer ul li:hover a{
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .footerContainer {
-    height: 170px !important; 
+    height: 150px !important; 
     margin: 0px;
   }
 }
