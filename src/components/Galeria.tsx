@@ -103,7 +103,7 @@ export const Galeria = () => {
           responsiveOptions={responsiveOptions}
           numVisible={5}
           circular
-          style={{ maxWidth: '720px' }}
+          style={{ maxWidth: '760px', minWidth: '280px' }}
           showItemNavigators
           showItemNavigatorsOnHover
           item={itemTemplate}
