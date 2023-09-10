@@ -94,7 +94,7 @@ nav ul li:hover {
 }
 
 nav ul li:hover a{
-  color: var(--color-fondo-light);
+  color: var(--color-fuente-dark);
 }
 
 nav #toggle,
@@ -138,6 +138,25 @@ footer p {
   margin: 0px;
 }
 
+footer ul {
+  list-style: none;
+  gap: 0.5rem;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: var(--color-fuente-dark);
+  font-family: var(--font-subtitle);
+  font-weight: 400;
+  font-size: 1rem;
+  transition: color 0.7s;
+}
+
+footer ul li:hover a{
+  color: var(--color-primario);
+  font-weight: 700;
+}
+
 .footerContainer{
   color: var(--color-fuente-dark);
   width: 100%;
@@ -147,15 +166,26 @@ footer p {
 .logoEcoPreFooter{
   width: 150px;
 }
+.top-footer{
+  background-color: var(--color-secundario);
+  height: 100px;
+}
+
+.bottom-footer{
+  background-color: var(--color-primario);
+  height: 100%;
+}
 
 .footer__copyright{
   font-size: 0.8rem;
   text-align: center;
+  padding: 10px 0px 10px 0px;
 }
 
 .footer__nombre{
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-align: center;
+  padding: 10px 0px 10px 0px;
 }
 
 .redes_sociales{
@@ -168,10 +198,12 @@ footer p {
   width: 1.4rem;
   color: var(--color-fuente-dark);
   padding-top: 3px;
+  transition: transform 0.5s;
 }
 
 .redes_logos:hover{
-  color: #7cdaf9;
+  color: var(--color-primario);
+  transform: scale(1.5);
 }
 
 .red-icon {
@@ -184,9 +216,16 @@ footer p {
 /*Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .footerContainer {
-    height: 150px !important; 
+    height: 280px !important; 
     margin: 0px;
   }
+  .footer__nombre{
+    font-size: 0.8rem;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 0;
+  }
+
   nav .menu {
     width: 100%;
     height: 0;
@@ -236,7 +275,7 @@ footer p {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .footerContainer {
-    height: 150px !important; 
+    height: 190px !important; 
     margin: 0px;
   }
 }
@@ -244,7 +283,7 @@ footer p {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .footerContainer {
-    height: 120px !important; 
+    height: 170px !important; 
     margin: 0px;
   }
 }
@@ -252,7 +291,7 @@ footer p {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .footerContainer {
-    height: 100px !important; 
+    height: 150px !important; 
     margin: 0px;
   }
 }
@@ -260,7 +299,7 @@ footer p {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .footerContainer {
-    height: 80px !important; 
+    height: 130px !important; 
     margin: 0px;
   }
 }
