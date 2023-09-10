@@ -4,7 +4,7 @@ export const Footer = () => {
     <footer>
       <div className="flex align-items-stretch align-items-center justify-content-around flex-wrap footerContainer">
         <div className="flex align-items-center justify-content-center px-5 m-0">
-        <img src="/src/assets/Negativo1EcoPre.png" alt="Logo_EcoPreNeg" className='logoEcoPreFooter'/>
+        <img src="/assets/Negativo1EcoPre.png" alt="Logo_EcoPreNeg" className='logoEcoPreFooter'/>
         </div>
         <div className="flex align-items-center justify-content-center px-5 m-0">
           <p className="footer__nombre">Desarrollado por: <b>Esteban Perea</b></p>

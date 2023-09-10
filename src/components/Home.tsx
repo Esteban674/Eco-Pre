@@ -4,7 +4,7 @@ export const Home = () => {
     <>    
       <h1>ECO-PRE</h1>
       <h2>Ladrillos ecologicos premoldeados</h2>
-      <img className="img-principal" src="/src/assets/ladrillos.png" alt="Ladrillos Premoldeados" />
+      <img className="img-principal" src="/assets/ladrillos.png" alt="Ladrillos Premoldeados" />
       <p>Los ladrillos ecológicos desempeñan un rol central en la esfera de la arquitectura sostenible, constituyendo un término que abarca una diversidad de materiales, cada uno portador de sus propios beneficios y peculiaridades. A pesar de esta heterogeneidad, todos comparten una serie de ventajas fundamentales en términos medioambientales y de sustentabilidad. Este ensayo aspira a esbozar de manera concisa y didáctica un panorama introductorio sobre este tema, que en realidad reviste una profundidad y complejidad mucho mayores. Invitamos a la audiencia a proseguir la lectura de este artículo en Ecología Verde, con el fin de adquirir un entendimiento esencial sobre los ladrillos ecológicos, sus tipologías y los beneficios inherentes.</p>
       <p>
       Históricamente, la imagen convencional de los ladrillos está asociada a un elemento contaminante. A pesar de esto, los ladrillos ecológicos, también conocidos como "ecoladrillos", contravienen esta noción preconcebida. En la actualidad, el empleo de ladrillos ecológicos es poco común, aunque en épocas pasadas solían emplearse materiales de construcción más sostenibles, como la paja, el barro o la madera.
