@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
 export const Header = () => {
@@ -12,7 +12,26 @@ export const Header = () => {
     setMenuOpen(!menuOpen); // Cierra el menú al hacer clic en cualquier enlace del menú
   };
 
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
+    <header className={`header ${isSticky ? 'sticky' : ''}`}>
     <div className="wrapper">
       <nav>
         <div className="header-brand">
@@ -36,5 +55,6 @@ export const Header = () => {
         </div>
       </nav>
     </div>
+    </header>
   );
 }
