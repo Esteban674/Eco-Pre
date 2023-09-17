@@ -96,9 +96,10 @@ export const Galeria = () => {
   }
 
   return (
-    <div className="card flex justify-content-center"> 
+    <div className="container-gallery card flex justify-content-center"> 
       {images && (
         <Galleria
+          className="gallery"
           value={images}
           responsiveOptions={responsiveOptions}
           numVisible={5}

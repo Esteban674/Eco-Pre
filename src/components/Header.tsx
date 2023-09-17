@@ -36,9 +36,8 @@ export const Header = () => {
       <nav>
         <div className="header-brand">
           <NavLink to="/" className="logo">
-            <img src="./assets/LogoEcoPre.png" alt="Logo_EcoPre" className='logoEcoPre'/>
+            <img src="./assets/LogoECOPRE2.png" alt="Logo_EcoPre" className='logoEcoPre'/>
           </NavLink>
-          <span className='brand'>ECO-PRE</span>
         </div>
         <label htmlFor="toggle" className="icon-menu" onClick={handleToggleClick}>
           <i className="material-icons">menu</i>
