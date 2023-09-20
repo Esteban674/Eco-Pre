@@ -68,6 +68,7 @@ const imagenes: Image[] = [
 export const Galeria = () => {
   const [images, setImages] = useState<Image[] | null>(null);
 
+
   const responsiveOptions = [
     {
       breakpoint: '991px',
@@ -91,10 +92,6 @@ export const Galeria = () => {
     return <img src={item.itemImageSrc} alt={item.alt} style={{ width: '100%', display: 'block' }} />;
   }
 
-  const thumbnailTemplate = (item: Image) => {
-    return <img src={item.thumbnailImageSrc} alt={item.alt} style={{ display: 'block'}} />;
-  }
-
   return (
     <div className="container-gallery card flex justify-content-center"> 
       {images && (
@@ -102,18 +99,16 @@ export const Galeria = () => {
           className="gallery"
           value={images}
           responsiveOptions={responsiveOptions}
-          numVisible={5}
+          numVisible={4}
           circular
           style={{ maxWidth: '760px', minWidth: '280px' }}
           showItemNavigators
-          showItemNavigatorsOnHover
           item={itemTemplate}
-          thumbnail={thumbnailTemplate}
+      
           // thumbnailsPosition={"right"}
         />
       )}
     </div>
   )
 };
-
 
