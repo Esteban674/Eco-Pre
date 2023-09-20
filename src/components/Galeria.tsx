@@ -93,6 +93,7 @@ export const Galeria = () => {
   }
 
   return (
+    <>
     <div className="container-gallery card flex justify-content-center"> 
       {images && (
         <Galleria
@@ -109,6 +110,7 @@ export const Galeria = () => {
         />
       )}
     </div>
+    </>
   )
 };
 

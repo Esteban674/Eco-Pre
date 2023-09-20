@@ -164,6 +164,7 @@ nav label {
 
 .card-text {
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -183,6 +184,7 @@ nav label {
 
 .card-img {
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -190,6 +192,7 @@ nav label {
   margin: 0px;
   width: 50%;
   min-width: 375px;
+  order: 1;
 }
 
 .card-img img {
@@ -198,12 +201,9 @@ nav label {
   border-radius: 15px;
 }
 
-p {
-  font-family: var(--font-text);
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: var(--color-fuente-light);
+.importante { 
+  font-weight: 700;
+  color: var(--color-terciario);
 }
 
 /*End Main/
@@ -402,6 +402,14 @@ footer ul li:hover a {
     height: 150px !important;
     margin: 0px;
   }
+  /*Main*/
+  .card-img {
+    order: 0;
+  }
+  .card-text {
+    order: 0;
+  }
+  /*End Main*/
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
