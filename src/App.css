@@ -214,15 +214,22 @@ nav label {
   overflow-x: hidden;
 }
 
+.titulo-galeria{
+  font-family: var(--font-subtitle);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-primario);
+}
+
 .container-gallery {
-  height: 80vh;
+  height: 100%;
   background-color: var(--color-cuaternario);
 }
 
 .gallery {
-  margin: auto;
-  border: 2px solid black;
-  
+  margin: 0;
+  padding: 10px 0px 20px 0px;
+  /* border: 2px solid black; */
 }
 
 .p-galleria-thumbnail-wrapper {
