@@ -31,7 +31,7 @@ export const Contacto: React.FC = () => {
       .then((result) => {
         console.log(result.text);
         setMensajeEnviado(true);
-         setTimeout(() => {  
+          setTimeout(() => {  
           navigate('/');
         }, 2000);
       }, (error) => {
@@ -44,8 +44,8 @@ export const Contacto: React.FC = () => {
       <div className='container-contacto'>
         <div className='titulo-contacto'>
           <h1>Información de contacto</h1>
-          <p>email@gmail.com</p>
-          <p>Tel : 0357-4256734</p>
+          <p>nicocabcjs@gmail.com</p>
+          <p>Tel: +54 9 3572 44-2530</p>
         </div>
         <div className='container-form-contacto'>
           <p>Contáctanos</p>

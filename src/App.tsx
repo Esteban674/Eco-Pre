@@ -13,7 +13,6 @@ import 'primeicons/primeicons.css';
 //prime flex
 import 'primeflex/primeflex.css';
 import { Galeria } from './components/Galeria';
-import { Proximamente } from './components/Proximamente';
 import { Contacto } from './components/Contacto';
 
         
@@ -29,7 +28,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/especificaciones" element={<Especificaciones />} />
           <Route path="/galeria" element={<Galeria />} />
-          <Route path="/proximamente" element={<Proximamente />} />
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
       </main>

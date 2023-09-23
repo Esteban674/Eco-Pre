@@ -48,7 +48,6 @@ export const Header = () => {
             <li><NavLink to="/" onClick={handleNavLinkClick}>Home</NavLink></li>
             <li><NavLink to="/especificaciones" onClick={handleNavLinkClick}>Especificaciones</NavLink></li>
             <li><NavLink to="/galeria" onClick={handleNavLinkClick}>Galeria</NavLink></li>
-            <li><NavLink to="/proximamente" onClick={handleNavLinkClick}>Proximamente</NavLink></li>
             <li><NavLink to="/contacto" onClick={handleNavLinkClick}>Contacto</NavLink></li>
           </ul>
         </div>
