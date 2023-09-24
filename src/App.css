@@ -436,6 +436,35 @@ footer ul li:hover a {
 }
 
 
+/* Para pantallas de celular */
+@media (max-width: 599px) {
+  .contenedor-imagen img {
+    content: url('https://res.cloudinary.com/dmehzrcf1/image/upload/v1695587593/Group_12_t2kccv.png'); /* Cambia 'imagen-celular.jpg' por la ruta de tu imagen para celular */
+  }
+}
+
+/* Para pantallas de 600px o más */
+@media (min-width: 600px) {
+  .contenedor-imagen img {
+    content: url('https://res.cloudinary.com/dmehzrcf1/image/upload/v1695474446/Web-Ecologica/Construcciones/C%C3%ADrculo_completo_final_tzfe9j.png'); /* Cambia 'imagen-grande.jpg' por la ruta de tu imagen para pantallas grandes */
+  }
+}
+
+/* Para pantallas de celular */
+@media (max-width: 599px) {
+  .contenedor-imagen2 img {
+    content: url('https://res.cloudinary.com/dmehzrcf1/image/upload/v1695587654/Frame_7_mfecot.png'); /* Cambia 'imagen-celular.jpg' por la ruta de tu imagen para celular */
+  }
+}
+
+/* Para pantallas de 600px o más */
+@media (min-width: 600px) {
+  .contenedor-imagen2 img {
+    content: url('https://res.cloudinary.com/dmehzrcf1/image/upload/v1695474454/Web-Ecologica/Construcciones/Ventajas_xcfbyd.png'); /* Cambia 'imagen-grande.jpg' por la ruta de tu imagen para pantallas grandes */
+  }
+}
+
+
 /*contacto*/
 
 .container-contacto {
