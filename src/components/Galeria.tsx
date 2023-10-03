@@ -140,7 +140,7 @@ export const Galeria = () => {
   return (
     <>
     <div className="container-gallery card flex flex-column justify-content-center align-items-center">
-    <h2 className="titulo-galeria text-center m-0 pt-3">Obras Terminadas</h2>
+    <h2 className="titulo-galeria text-center m-0 pt-3">Obras terminadas</h2>
         {images1 && (
           <Galleria
             className="gallery"
@@ -156,7 +156,7 @@ export const Galeria = () => {
         )}
       </div>
       <div className="container-gallery card flex flex-column justify-content-center align-items-center">
-      <h2 className="titulo-galeria text-center m-0 pt-3">Obras en Construcción</h2>
+      <h2 className="titulo-galeria text-center m-0 pt-3">Obras en construcción</h2>
         {images2 && (
           <Galleria
             className="gallery"

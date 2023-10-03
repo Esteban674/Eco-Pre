@@ -44,8 +44,11 @@ export const Contacto: React.FC = () => {
       <div className='container-contacto'>
         <div className='titulo-contacto'>
           <h1>Información de contacto</h1>
-          <p>nicocabcjs@gmail.com</p>
-          <p>Tel: +54 9 3572 44-2530</p>
+          <p className='m-0 p-0'>E-mail</p>
+          <p className='m-0 p-0 pt-1 pb-4'><strong>nicocabcjs@gmail.com</strong></p>
+          <p className='m-0 p-0'>Teléfonos</p>
+          <p className='m-0 p-0 pt-1 pb-1'><strong>+54 9 3572 44-2530</strong></p>
+          <p className='m-0 p-0'><strong>+54 9 3875 67-0411</strong></p>
         </div>
         <div className='container-form-contacto'>
           <p>Contáctanos</p>
