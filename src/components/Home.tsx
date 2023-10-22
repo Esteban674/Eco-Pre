@@ -55,7 +55,20 @@ export const Home = () => {
           </div>
         </div>
       </section>
-
+      <section className="section-light">
+        <div className="card-container">
+          <div className="card-img">
+            <img src="./assets/medidas.jpg" alt="Medidas" />
+          </div>
+          <div className="card-text">
+          <h2 className="card-title">Descubre la Modularidad de Nuestros Ladrillos Ecológicos</h2>
+          <p>
+          Nuestros <span className="importante">ladrillos ecológicos</span> son la elección inteligente para tus proyectos de construcción. Con unas medidas precisas de 250 mm de largo, 65 mm de alto y 125 mm de ancho, ofrecen una <span className="importante">modularidad</span> excepcional que facilita su integración en cualquier diseño arquitectónico.
+          Pero eso no es todo. Lo que hace que nuestros ladrillos sean realmente versátiles son sus dos orificios de 58 mm de diámetro. Estos permiten no solo la fácil colocación de <span className="importante">tuberías para agua y electricidad</span>, sino que también brindan la posibilidad de llenarlos con hormigón para una mayor resistencia y durabilidad. Además, la opción de reforzarlos con hierro garantiza una <span className="importante">estructura sólida y confiable.</span>
+          </p>
+          </div>
+        </div>
+      </section>
       
       
       

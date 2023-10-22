@@ -27,7 +27,7 @@ export const Contacto: React.FC = () => {
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_4075nmm', 'template_jmwii7a', form.current!, 'vJqqnWJ8LkxBmM1O9')
+    emailjs.sendForm('service_fwpmz2n', 'template_yfaona8', form.current!, 'rKkU6lrPzIriRSrDA')
       .then((result) => {
         console.log(result.text);
         setMensajeEnviado(true);
@@ -45,7 +45,7 @@ export const Contacto: React.FC = () => {
         <div className='titulo-contacto'>
           <h1>Información de contacto</h1>
           <p className='m-0 p-0'>E-mail</p>
-          <p className='m-0 p-0 pt-1 pb-4'><strong>nicocabcjs@gmail.com</strong></p>
+          <p className='m-0 p-0 pt-1 pb-4'><strong>ecoprecba@gmail.com</strong></p>
           <p className='m-0 p-0'>Teléfonos</p>
           <p className='m-0 p-0 pt-1 pb-1'><strong>+54 9 3572 44-2530</strong></p>
           <p className='m-0 p-0'><strong>+54 9 3875 67-0411</strong></p>
