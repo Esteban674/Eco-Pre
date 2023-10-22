@@ -27,7 +27,7 @@ export const Contacto: React.FC = () => {
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_fwpmz2n', 'template_yfaona8', form.current!, 'rKkU6lrPzIriRSrDA')
+    emailjs.sendForm('service_iiy58th', 'template_yfaona8', form.current!, 'rKkU6lrPzIriRSrDA')
       .then((result) => {
         console.log(result.text);
         setMensajeEnviado(true);
