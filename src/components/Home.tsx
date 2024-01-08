@@ -6,7 +6,7 @@ export const Home = () => {
       <section className="section-light">
         <div className="card-container">
           <div className="card-img">
-            <img src="./assets/ladrillos.png" alt="Ladrillos Premoldeados" />
+            <img src="./assets/ladrillo.jpg" alt="Ladrillos Premoldeados" />
           </div>
           <div className="card-text">
           <h2 className="card-title">Ladrillos Ecológicos de Vanguardia</h2>
