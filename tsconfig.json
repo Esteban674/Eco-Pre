@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "public/js/lightbox-plus-jquery.js"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
